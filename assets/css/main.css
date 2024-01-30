@@ -1,0 +1,187 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Open Sans, sans-serif;
+}
+:root{
+  /* first theme */
+ --background-color-1-: #3B4664;
+ --output-color-1-: #181F32;
+ --input-color-1-: #252D44;
+ --equal-color-1-: #D13F30;
+ --equal-shadow-color-1-: #94271B;
+ --equal-hower-color-1-: #EC6C5D;
+ --font-color-1-: #454B5C;
+ --rare-btn-color-1-: #65729A;
+ --rare-btn-shadow-color-1-: #414E70;
+ --rare-btn-hover-color-1-: #7583AD;
+ --common-btn-color-1-: #EAE3DB;
+ --common-btn-shadow-color-1-: #B4A398;
+ --common-btn-hower-color-1-: #F0EBE7;
+ --white-color--: #FFFFFF;
+ --top-font-color-1-: #FFFFFF;
+ /* second theme */
+ --background-color-2-: #E7E7E7;
+ --output-color-2-: #EFEFEF;
+ --input-color-2-: #D4CDCD;
+ --equal-color-2-: #C85400;
+ --equal-shadow-color-2-: #904818;
+ --equal-hower-color-2-: #5BAFB4;
+ --font-color-2-: #363732;
+ --rare-btn-color-2-: #378185;
+ --rare-btn-shadow-color-2-: #1C6469;
+ --rare-btn-hover-color-2-:#5BAFB4;
+ --common-btn-color-2-: #E7E5E1;
+ --common-btn-shadow-color-2-: #A29E95;
+ --common-btn-hower-color-2-: #FFFEFB;
+ --top-font-color-2-: #000000 ;
+ /* third theme */
+ --background-color-3-: #170629;
+ --output-color-3-: #1D0836;
+ --input-color-3-: #1D0836;
+ --equal-color-3-: #00DECE;
+ --equal-shadow-color-3-: #6BF2F0;
+ --equal-hower-color-3-: #4BEBE0;
+ --font-color-3-: #EFDF72;
+ --rare-btn-color-3-: #54087F;
+ --rare-btn-shadow-color-3-: #9E2BCC;
+ --rare-btn-hover-color-3-:#7C23AF;
+ --common-btn-color-3-: #331A4E;
+ --common-btn-shadow-color-3-: #722A86;
+ --common-btn-hower-color-3-: #502E75;
+ --top-font-color-3-: #EFDF72 ;
+}
+.hero{
+  background-color: var(--background-color-1-);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+.container{
+  width: 400px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.top{
+  display: flex;
+  justify-content: space-between;
+  color: var(--top-font-color-1-);
+  width: 100%;
+  margin-bottom: 25px;
+  align-items: center;
+}
+.left{
+  font-weight: 700;
+  font-size: 20px;
+}
+.right{
+  display: flex;
+  font-weight: 700;
+  font-size: 12px;
+  gap: 20px;
+  align-items: center;
+}
+#theme-switch{
+  width: 60px;
+  height: 45px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.theme-nums{
+  display: flex;
+  width: 100%;
+  gap: 10px;
+  justify-content: center;
+}
+#changeColorButton{
+  background-color: var(--input-color-1-);
+  width: 60px;
+  height: 20px;
+  border-radius: 10px;
+  position: relative;
+  cursor: pointer;
+  border: none;
+}
+#changeColorButton::before{
+  content: '';
+  position: absolute;
+  top: 3.4px;
+  left: var(--left-position, 4px);
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: var(--equal-color-1-);
+}
+.middle{
+  width: 380px;
+  padding: 18px;
+  height: 100px;
+  border-radius: 10px;
+  background-color: var(--output-color-1-);
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.text{
+  border: none;
+  width: 100%;
+  height: 60px;
+  font-size: 45px;
+  color: var(--top-font-color-1-);
+  background: transparent;
+  text-align: right;
+  justify-content: flex-end;
+  box-shadow: none;
+}
+.container-nums{
+  display: flex;
+  width: 375px;
+  background-color: var(--input-color-1-);
+  gap: 25px;
+  flex-wrap: wrap;
+  padding: 20px;
+  border-radius: 10px;
+}
+.button{
+  width: 75px;
+  color: var(--font-color-1-);
+  font-size: 24px;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+  height: 50px;
+  border-radius: 8px;
+  background-color: var(--common-btn-color-1-);
+  box-shadow: 0px 5px var(--common-btn-shadow-color-1-);
+}
+.button:hover{
+  background-color: var(--common-btn-hower-color-1-);
+}
+.rare{
+  width: 175px;
+}
+.rare:hover{
+  background-color: var(--rare-btn-hover-color-1-);
+}
+.rare-color{
+  background-color: var(--equal-color-1-);
+  box-shadow: 0px 5px var(--equal-shadow-color-1-);
+  color: var(--white-color--);
+}
+.rare-color:hover{
+  background-color: var(--equal-hower-color-1-);
+}
+.del-reset{
+  background-color: var(--rare-btn-color-1-);
+  box-shadow: 0px 5px var(--rare-btn-shadow-color-1-);
+  color: var(--white-color--);
+}
+.del-reset:hover{
+  background-color: var(--rare-btn-hover-color-1-);
+}
